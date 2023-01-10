@@ -1,0 +1,516 @@
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GG - GAME GEAR</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Meu CSS -->
+    <link href="css/novasfontes.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+    <link rel="manifest" href="img/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="js/meujs.js"></script>
+
+</head>
+
+<body onload="dash()">
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a id="gg" class="navbar-brand" href="index.html"><strong>Game Gear</strong> </a>
+
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <img style="max-width:100px; margin-top: 8px;" src="img\logo\gear.fw.png">
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plataformas <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="pc.html">PC</a>
+                        </li>
+                        <li>
+                            <a href="xbox.html">XBOX</a>
+                        </li>
+                        <li>
+                            <a href="ps.html">PlayStation</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+
+                    <a href="login.html"><input id="loginbutton" type="button" value="Login"></a>
+
+                </li>
+            </ul>
+        </div>
+
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+<div class="well">
+    <div class="row">
+        <div class="col-md-">
+            <h3 id="loginWellcome" class="bannerBaixo"><strong>Texto</strong></h3>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-2 col-lg-5 col-md-4">
+            <div class="thumbnail">
+
+                <h3 class="cabecalhoDash">Dados Cadastrais</h3>
+                <div class="caption">
+                    <hr>
+                    <form class="form-horizontal">
+                        <fieldset>
+
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">Nome do usuario:</label>
+                                <div class="col-md-6">
+                                    <input id="nomeCompleto" name="textinput" type="text" class="form-control input-md"
+                                           disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">Sexo:</label>
+                                <div class="col-md-6">
+                                    <input id="sexo" name="textinput" type="text" class="form-control input-md"
+                                           disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">E-mail:</label>
+                                <div class="col-md-6">
+                                    <input id="email" name="textinput" type="text" class="form-control input-md"
+                                           disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">Endereço:</label>
+                                <div class="col-md-6">
+                                    <input id="endereco" name="textinput" type="text" class="form-control input-md"
+                                           disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">ID:</label>
+                                <div class="col-md-6">
+                                    <input id="nomeUser" name="textinput" type="text" class="form-control input-md"
+                                           disabled>
+                                </div>
+                            </div>
+
+
+                        </fieldset>
+                    </form>
+                    <hr>
+
+
+                    <button type="button" class="btn btn-block btn-success" data-toggle="modal"
+                            data-target="#modalLogin">
+                        <span class="glyphicon glyphicon-list-alt"></span> Atualizar dados
+                    </button>
+                    <hr>
+                    <button type="button" class="btn btn-block btn-warning" data-toggle="modal"
+                            data-target="#modalSenha">
+                        <span class="glyphicon glyphicon-cog"></span> Alterar senha
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <h3 class="cabecalhoDash">Dados do cartão</h3>
+                <div class="caption">
+
+
+                    <hr>
+                    <form class="form-horizontal">
+                        <fieldset>
+
+
+                            <!-- Select Basic -->
+                            <div class="form-group">
+                                <label class="col-md-6 control-label" for="selectbasic">Bandeira do
+                                    cartão:</label>
+                                <div class="col-md-6">
+                                    <select id="selectbasic" name="selectbasic" class="form-control" disabled>
+                                        <option value="0">Bandeira do cartão</option>
+                                        <option value="1">Visa</option>
+                                        <option value="2">Elo</option>
+                                        <option value="3">Mastercard</option>
+                                        <option value="4">American Express</option>
+                                        <option value="5">Discover Network</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-6 control-label" for="textinput">Numero do
+                                    cartão:</label>
+                                <div class="col-md-6">
+                                    <input id="textinput" name="textinput" type="text"
+                                           placeholder="0000 0000 0000 0000"
+                                           class="form-control input-md" disabled>
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-6 control-label">Nome do
+                                    cartão</label>
+                                <div class="col-md-6">
+                                    <input id="namecard" name="namecard" type="text"
+                                           placeholder="João Clariano da silva"
+                                           class="form-control input-md" disabled>
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-6 control-label" for="textinput">Data de
+                                    validade</label>
+                                <div class="col-md-4">
+                                    <input id="val" name="textinput" type="text" placeholder="12/22"
+                                           class="form-control input-md" disabled>
+
+                                </div>
+                            </div>
+                            <br>
+                            <!-- Password input-->
+                            <!--
+                            <div class="form-group">
+                                <label class="col-md-6 control-label" for="secode">código CVC:</label>
+                                <div class="col-md-3">
+                                    <input id="secode" name="secode" type="password" placeholder="036"
+                                           class="form-control input-md" disabled>
+
+                                </div>
+                            </div> -->
+                        </fieldset>
+                    </form>
+
+
+                    <hr>
+                    <button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modalCard"
+                            onclick="pushData()">
+                        <span class="glyphicon glyphicon-credit-card"></span> Adicionar Cartão
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2 col-lg-3 col-md-4">
+            <div class="thumbnail">
+                <h3 class="cabecalhoDash">Meus produtos</h3>
+                <div class="caption">
+                    <hr>
+
+                    <a href="xbox4.html"><img src="img\vendas\Halo Guardians.fw.png"></a>
+                    <hr>
+                    <a href="ps4.html"><img src="img\vendas\horizonzerodawn.fw.png"></a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+
+<!-- /.row -->
+
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; Game Gear 2017</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Modais -->
+
+<!-- Login Modal -->
+<div class="col-sm-2 col-lg-2 col-md-4">
+    <div id="modalLogin" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <fieldset>
+                    <legend>Atualizar dados</legend>
+
+                    <form class="form-horizontal">
+                        <fieldset>
+
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">Nome do usuario:</label>
+                                <div class="col-md-4">
+                                    <input id="getnomeCompleto" name="textinput" type="text"
+                                           class="form-control input-md"
+                                    >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">Sexo:</label>
+                                <div class="col-md-4">
+									<select id="getsexo" name="textinput" class="form-control">
+											<option value="escolher">escolher</option>
+											<option value="indefinido">indefinido</option>
+											<option value="Mulher">Mulher</option>
+											<option value="Homem">Homem</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">E-mail:</label>
+                                <div class="col-md-4">
+                                    <input id="getemail" name="textinput" type="text" class="form-control input-md"
+                                    >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">Endereço:</label>
+                                <div class="col-md-4">
+                                    <input id="getendereco" name="textinput" type="text" class="form-control input-md"
+                                    >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-5 control-label" for="textinput">ID:</label>
+                                <div class="col-md-4">
+                                    <input id="getnomeUser" name="textinput" type="text" class="form-control input-md"
+                                    >
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <hr>
+                        <button type="button" class="btn btn-block btn-success" onclick="atualizaDados(this)">
+                            <span class="glyphicon glyphicon-ok"></span> Atualizar Dados
+                        </button>
+                        <button type="button" class="btn btn-block btn-danger" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-remove"></span> Cancelar
+                        </button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fim Login Modal -->
+
+<!-- Card Modal -->
+
+<div id="modalCard" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+     aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+
+
+        <div class="modal-content">
+            <h3 class="h3dash">Atualizar cartão</h3>
+
+            <form class="form-horizontal">
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-1 control-label"></label>
+                    <div class="col-md-10">
+                        <select id="getselectbasic" name="selectbasic" class="form-control">
+                            <option value="0">Bandeira do cartão</option>
+                            <option value="1">Visa</option>
+                            <option value="2">Elo</option>
+                            <option value="3">Mastercard</option>
+                            <option value="4">American Express</option>
+                            <option value="5">Discover Network</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-1 control-label"></label>
+                    <div class="col-md-10">
+                        <input id="gettextinput" name="textinput" type="text"
+                               placeholder="Numero do Cartão: 000 000 000"
+                               class="form-control input-md">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-1 control-label"></label>
+                    <div class="col-md-10">
+                        <input id="getnamecard" name="namecard" type="text"
+                               placeholder="Nome no Cartão: João L pereira"
+                               class="form-control input-md">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-6 control-label" for="textinput">validade:</label>
+                    <div class="col-md-4">
+                        <input id="getval" name="textinput" type="text" placeholder="12/22"
+                               class="form-control input-md">
+                    </div>
+                </div>
+
+                <!-- Password input-->
+                <!--  <div class="form-group">
+                      <label class="col-md-6 control-label" for="secode">código CVC:</label>
+                      <div class="col-md-3">
+                          <input id="getsecode" name="secode" type="password" placeholder="036"
+                                 class="form-control input-md">
+                      </div>
+                  </div> -->
+                <hr>
+                <button type="button" class="btn btn-block btn-success" onclick="addCard(this)">
+                    <span class="glyphicon glyphicon-ok"></span> Atualizar Dados
+                </button>
+                <button type="button" class="btn btn-block btn-danger" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span> Cancelar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- fim card Modal -->
+
+<!-- Senha Modal -->
+
+<div id="modalSenha" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+     aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <form class="form-horizontal">
+                <fieldset>
+                    <h3 class="h3dash"><span class="glyphicon glyphicon-lock"></span> Verificar senha</h3>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Senha:</label>
+                        <div class="col-md-6">
+                            <input id="AcessoModal" name="passreg" placeholder="******"
+                                   class="form-control input-md"
+                                   type="password"></div>
+                    </div>
+                    <hr>
+                    <button type="button" class="btn btn-block btn-success" data-toggle="modal"
+                            onclick="verificaSenha(this)">
+                        <span class="glyphicon glyphicon-cog"></span> Verificar!
+                    </button>
+                    <button type="button" class="btn btn-block btn-danger"
+                            data-dismiss="modal" data-target="#modalLogin">
+                        <span class="glyphicon glyphicon-remove"></span> Cancelar
+                    </button>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Nova Senha -->
+
+
+<div id="modalNovaSenha" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+     aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <form class="form-horizontal">
+                <fieldset>
+                    <h3 class="h3dash"><span class="glyphicon glyphicon-lock"></span> nova senha</h3>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Senha:</label>
+                        <div class="col-md-6">
+                            <input id="novaSenha" name="passreg" placeholder="******"
+                                   class="form-control input-md"
+                                   type="password"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">ReSenha:</label>
+                        <div class="col-md-6">
+                            <input id="reNovaSenha" name="passreg" placeholder="******"
+                                   class="form-control input-md"
+                                   type="password"></div>
+                    </div>
+                    <hr>
+                    <button type="button" class="btn btn-block btn-success" data-toggle="modal"
+                            onclick="alteraSenha(this)">
+                        <span class="glyphicon glyphicon-pencil"></span> Alterar senha!
+                    </button>
+                </fieldset>
+            </form>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- fim Senha Modal -->
+
+<!-- Fim modais -->
+
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="js/meujs.js"></script>
+
+    <title>GG - GAME GEAR</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Meu CSS -->
+    <link href="css/novasfontes.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+    <link rel="manifest" href="img/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body onload="loadL()">
+
+<div id="Suprema">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a id="gg" class="navbar-brand" href="index.html">Game Gear </a>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <img style="max-width:100px; margin-top: 8px;" src="img\logo\gear.fw.png">
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plataformas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="pc.html">pc</a>
+                            </li>
+                            <li>
+                                <a href="xbox.html">XBOX</a>
+                            </li>
+                            <li>
+                                <a href="ps.html">PlayStation</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/banner pc.png');"></div>
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/banner xbox.png');"></div>
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/banner ps.png');"></div>
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <hr>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-lg-3 col-md-4">
+            </div>
+
+
+            <div class="col-sm-4 col-lg-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+
+                        <form class="form-horizontal">
+                            <fieldset>
+
+                                <h1>login</h1>
+
+                                <div id="alertaLogin" class="alert alert-danger">
+                                    <p id="errou"></p>
+                                </div>
+                                <!-- imput Login-->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">login</label>
+                                    <div class="col-md-6">
+                                        <input id="loginreg" name="loginreg" placeholder="Login"
+                                               class="form-control input-md" type="text">
+                                    </div>
+                                </div>
+
+                                <!-- input Password -->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">Senha</label>
+                                    <div class="col-md-6">
+                                        <input id="passreg" name="passreg" placeholder="******"
+                                               class="form-control input-md"
+                                               type="password">
+                                    </div>
+                                </div>
+                                <!-- Modal com Trigger -->
+                                <label class="col-md-3 control-label" for="passreg"></label>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-block btn-success" onclick="verificarL()">
+                                        <span class="glyphicon glyphicon-user"></span> Logar
+                                    </button>
+                                </div>
+                    </div>
+                    <hr>
+                    <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal">
+                        <span class=" glyphicon glyphicon-plus"></span> Criar nova conta!
+                    </button>
+                    </fieldset>
+                    </form>
+
+
+                    <!--inicio Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title" id="tituloCardBox">Cadastro Game Gear</h4>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <form class="form-horizontal">
+                                        <fieldset>
+                                            <!-- Form inicio -->
+                                            <legend>Dados cadastrais</legend>
+
+                                            <!-- nome input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Nome de usuario:</label>
+                                                <div class="col-md-4">
+                                                    <input id="textinput1" name="textinput1" type="text"
+                                                           placeholder="Nome completo" class="form-control input-md">
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">E-mail </label>
+                                                <div class="col-md-4">
+                                                    <input id="textinput2" name="textinput2" type="text"
+                                                           placeholder="email@server.com" class="form-control input-md">
+
+                                                </div>
+                                            </div>
+                                            <!-- End input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Endereço </label>
+                                                <div class="col-md-4">
+                                                    <input id="textinput3" name="textinput3" type="text"
+                                                           placeholder="Rua do corintia 625"
+                                                           class="form-control input-md">
+
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <legend>Dados da connta</legend>
+
+                                            <!-- Login input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Login </label>
+                                                <div class="col-md-4">
+                                                    <input id="textinput4" name="textinput4" type="text"
+                                                           placeholder="Login"
+                                                           class="form-control input-md">
+
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Senha input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Senha</label>
+                                                <div class="col-md-4">
+                                                    <input id="passwordinput1" name="passwordinput1"
+                                                           placeholder="*********"
+                                                           class="form-control input-md"
+                                                           type="password">
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Confirmação input-->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="passwordinput2">Confirmar
+                                                    senha</label>
+                                                <div class="col-md-4">
+                                                    <input id="passwordinput2" name="passwordinput2"
+                                                           placeholder="*********"
+                                                           class="form-control input-md" type="password">
+                                                </div>
+                                            </div>
+
+                                            <!-- Select sexo -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="selectbasic">Genero</label>
+                                                <div class="col-md-4">
+                                                    <select id="selectbasic" name="selectbasic" class="form-control">
+                                                        <option value="escolha">escolher</option>
+                                                        <option value="indefinido">indefinido</option>
+                                                        <option value="Mulher">Mulher</option>
+                                                        <option value="Homem">Homem</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+
+                                                <!-- Termo Checkboxe -->
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Concordo com os
+                                                        termos da Game Gear</label>
+                                                    <div class="col-md-4">
+
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="checkbox" name="radios" id="concordo"
+                                                                       value="1">
+
+                                                                Concordo
+                                                            </label>
+                                                        </div>
+
+                                                        <br>
+                                                        <div class="col-md-10 control-label">
+                                                            <button id="confirmarR" type="button"
+                                                                    class="btn btn-primary"
+                                                                    onclick="verificarR(this)">Concluir<span
+                                                                    class="glyphicon glyphicon-floppy-disk"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </fieldset>
+                                    </form>
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal"
+                                    >Cancelar <span
+                                            class="glyphicon glyphicon-floppy-remove"></span></button>
+                                </div>
+                                <!--  Fim  modal   -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Footer -->
+                <footer>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Copyright &copy; Game Gear 2017</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Script do carousel não alterar! -->
+<script>
+    $('.carousel').carousel({
+        interval: 4000 //Velocidade da troca de Slides (ms)
+    })
+</script>
+
+</body>
+
+</html>
